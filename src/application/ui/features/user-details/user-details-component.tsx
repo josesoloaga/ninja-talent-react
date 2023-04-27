@@ -90,18 +90,20 @@ const UserDetailsComponent = ({ userDetails }: Props) => {
         <p>sha1: {sha1}</p>
         <p>sha256: {sha256}</p>
       </div>
-      <div css={divOtherInfo}>
         <h3>Register</h3>
+      <div css={divInfoStyle}>
         <p>
           Registered: {registeredDate}, since: {registeredAge} years ago
-        </p>
-        <h3>Phone:</h3>
-        <p>
-          {phone}, cell: {cell}
         </p>
         <h3>id:</h3>
         <p>
           idName: {idName}, value: {value}
+        </p>
+      </div>
+        <h3>Phone:</h3>
+      <div css={divInfoStyle}>
+        <p>
+          {phone}, cell: {cell}
         </p>
       </div>
 
